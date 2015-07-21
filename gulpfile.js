@@ -7,7 +7,7 @@ var critical = require('critical');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
-gulp.task('sass:compile', function() {
+gulp.task('sass', function() {
   gulp.src('./src/styles/**/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./src/tmp/styles/'))
