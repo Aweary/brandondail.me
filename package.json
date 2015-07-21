@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "./server/bin/www"
+    "start": "node server.js"
   },
   "author": "Brandon Dail <Kierkegaurd@gmail.com>",
   "license": "MIT",
@@ -23,6 +23,8 @@
     "gulp-uglify": "^1.2.0"
   },
   "dependencies": {
-    "gist.scss": "0.0.1"
+    "express": "^4.13.1",
+    "gist.scss": "0.0.1",
+    "microbe.js": "^0.1.5"
   }
 }
