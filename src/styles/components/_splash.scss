@@ -1,4 +1,6 @@
 .section--splash {
   @extend .section;
+  height: 100vh;
+  min-height: 770px;
   background-color: $paleryellow;
 }

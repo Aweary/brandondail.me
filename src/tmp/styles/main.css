@@ -225,12 +225,17 @@ input[type="radio"] {
   right: 0;
   bottom: 0;
   max-width: 350px;
-  margin: 0 auto;
-  height: 30vh;
-  display: block; }
+  max-height: 40%;
+  margin: 0 auto; }
   @media screen and (min-width: 760px) {
     .me {
-      height: auto; } }
+      display: block; } }
+
+.img-container {
+  width: 100%;
+  height: 40%;
+  display: block;
+  background-color: blue; }
 
 .header {
   position: relative; }
@@ -264,7 +269,7 @@ hr {
   color: #E91E63; }
 
 .nav {
-  font-size: 0.80em;
+  font-size: 0.60em;
   padding: 0;
   list-style: none;
   width: 100%;
@@ -275,6 +280,7 @@ hr {
       margin-right: 2em; }
   @media screen and (min-width: 760px) {
     .nav {
+      font-size: 0.8em;
       width: 50%;
       position: absolute;
       top: 0;
@@ -353,6 +359,8 @@ hr {
   color: #B39DDB !important; }
 
 .section--splash {
+  height: 100vh;
+  min-height: 770px;
   background-color: #ECEFF1; }
 
 .section--resume {
