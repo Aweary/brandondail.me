@@ -1,0 +1,13 @@
+.section--projects {
+  @extend .section;
+  background-color: #CFD8DC;
+}
+
+.projects--container {
+  h2 { color: $pink; }
+}
+
+.projects--item {
+  width: 100%;
+  margin: 3em 0.25em;
+}

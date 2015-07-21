@@ -1,0 +1,58 @@
+
+@mixin map-gist-values($key, $class, $value) {
+  @if map-has-key($gist, $key) {
+    .#{$class} {
+      #{$value}: map-get($gist, $key) !important;
+    }
+  }
+}
+
+$classes: 'k' 's' 's1' 's2' 's3' 'st' 'en' 'pds' 'smi' 'c1';
+
+.gist {
+
+  @include map-gist-values(padding, gist-data, padding);
+  @include map-gist-values(meta-bg, gist-meta, background-color);
+  @include map-gist-values(meta-color, gist-meta, color);
+  @include map-gist-values(meta-display, gist-meta, display);
+  @include map-gist-values(meta-display, gist-meta, display);
+  @include map-gist-values(line-numbers-border, line-numbers, border);
+  @include map-gist-values(line-numbers-border, blob-num, border);
+  @include map-gist-values(line-numbers-color, line-numbers, color);
+  @include map-gist-values(line-numbers-color, blob-num, color);
+  @include map-gist-values(line-numbers-bg, line-numbers, background-color);
+
+
+  @if map-has-key($gist, background) {
+    $gist-bg: map-get($gist, background);
+    .gist-data { background-color: $gist-bg !important; }
+    .highlight { background-color: $gist-bg !important; }
+  }
+
+
+  @if map-has-key($gist, color) {
+    $gist-color: map-get($gist, color);
+    .line-data { color: $gist-color !important; }
+    .gist-data { color: $gist-color !important; }
+    .blob-code-inner { color: $gist-color !important; }
+  }
+
+  @if map-has-key($gist, border) {
+    $gist-border: map-get($gist, border);
+    .gist-file { border: $gist-border !important; }
+    .main-content table td {
+      border: $gist-border !important;
+    }
+  }
+
+  @if map-has-key($gist, colors) {
+    $colors: map-get($gist, colors);
+    @each $color in $colors {
+      $i: index($colors, $color);
+      $class: nth($classes, $i);
+      .pl-#{$class} {
+        color: $color !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.main-title {
+  color: $red;
+}
+
+
+.bold {
+  color: $blue;
+  font-weight: bold;
+}
+
+
+.section {
+  height: auto;
+  min-height: 100vh;
+  padding: 1em;
+  position: relative;
+}
+
+
+.me {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.header {
+  position: relative;
+}
+
+.subtitle {
+  color: $purple;
+}
+
+
+body, html {
+  font-family: $font-family-monospace;
+  color: $darkblue;
+}
+
+a {
+  color: $blue;
+  text-decoration: underline;
+  transition-duration: 0.5s;
+
+  &:hover {
+    transition-duration: 0.5s;
+    color: $red;
+  }
+}
+
+
+hr {
+  border: none;
+  background-color: $paleyellow;
+  height: 0.35em;
+  clear: both;
+}
+
+
+.fa {
+  font-size: 0.9em !important;
+  color: $purple;
+}
+
+
+.title {
+  @extend .main-title;
+}
+
+.resume-title {
+  @extend .main-title;
+}
+
+.projects-title {
+  @extend .main-title;
+}
+
+.resume--item-title {
+  color: $pink;
+}

@@ -1,0 +1,14 @@
+$font-family-monospace: 'Roboto Mono';
+$max-width: 950px;
+
+$gist: (
+  background: #263238,
+  color: white,
+  border: none,
+  padding: 3em,
+  colors: $pink $cyan $blue $red $yellow $paleyellow $orange #0086b3 $lightpurple,
+  line-numbers-bg: $darkblue,
+  line-numbers-color: white,
+  line-numbers-border: none,
+  meta-display: none,
+);
