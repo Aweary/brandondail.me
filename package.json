@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "start": "./server/bin/www"
   },
   "author": "Brandon Dail <Kierkegaurd@gmail.com>",
   "license": "MIT",
