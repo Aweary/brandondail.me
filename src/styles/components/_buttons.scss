@@ -1,0 +1,24 @@
+.btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: $pink;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  margin: 10em auto;
+  border: none;
+  font-size: 0.9em;
+  transition-duration: 0.25s;
+
+  span {
+    padding-top: 1em;
+    display: block;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+
+}

@@ -213,6 +213,9 @@ input[type="radio"] {
   color: #2176C7;
   font-weight: bold; }
 
+.logo {
+  width: 35px; }
+
 .section, .section--splash, .section--resume, .section--projects {
   height: auto;
   min-height: 100vh;
@@ -285,6 +288,25 @@ hr {
       position: absolute;
       top: 0;
       right: 0; } }
+
+.btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: #E91E63;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  margin: 10em auto;
+  border: none;
+  font-size: 0.9em;
+  transition-duration: 0.25s; }
+  .btn span {
+    padding-top: 1em;
+    display: block; }
+  .btn:hover {
+    transform: scale(1.1);
+    color: white; }
 
 .gist .gist-data {
   padding: 3em !important; }
