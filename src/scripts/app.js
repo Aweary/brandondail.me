@@ -1,15 +1,13 @@
+import TweenMax from 'gsap'
 
+const slice = Array.prototype.slice
 
-var slice = Array.prototype.slice;
+if (!window.on) window.on = on
+if (!document.on) document.on = on
+if (!window.$) window.$ = $
 
-if (!window.on) window.on = on;
-if (!document.on) document.on = on;
-if (!window.$) window.$ = $;
-
-scroll('#projects--link', '#projects');
-scroll('#resume--link', '#resume');
-
-
+scroll('#projects--link', '#projects')
+scroll('#resume--link', '#resume')
 
 
 /**
@@ -22,15 +20,15 @@ scroll('#resume--link', '#resume');
 
 function scroll(link, target) {
 
-  var link = $(link);
-  var target = $(target);
+  var link = $(link)
+  var target = $(target)
 
   link.on('click', function(e) {
-    e.preventDefault();
-    var offset = getOffset(target);
+    e.preventDefault()
+    var offset = getOffset(target)
     var opts = { scrollTo: { y: offset } }
-    TweenMax.to(window, 0.5, opts);
-    return false;
+    TweenMax.to(window, 0.5, opts)
+    return false
   })
 
 }
@@ -44,7 +42,7 @@ function scroll(link, target) {
  */
 
 function on(event, handler, bubble) {
-  this.addEventListener(event, handler, bubble);
+  this.addEventListener(event, handler, bubble)
 }
 
 
@@ -57,17 +55,17 @@ function on(event, handler, bubble) {
 
 function $(node, all) {
   if (all) {
-    var nodes = slice.call(document.querySelectorAll(node));
-    for (var i = 0; i < nodes.length; i++) {
-      nodes[i].on = on;
+    var nodes = slice.call(document.querySelectorAll(node))
+    for (var i = 0 i < nodes.length i++) {
+      nodes[i].on = on
     }
   }
 
-  var node =  document.querySelector(node);
-  node.on = on;
-  return node;
+  var node =  document.querySelector(node)
+  node.on = on
+  return node
 }
 
 function getOffset(node) {
-  return node.offsetTop;
+  return node.offsetTop
 }

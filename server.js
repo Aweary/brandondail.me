@@ -1,10 +1,11 @@
-var microbe = require('microbe.js');
-var app = microbe();
+
+import microbe from 'microbe.js'
+const app = microbe()
 
 app.set('publicFolder', 'dist');
 
-app.route('/', function(req, res) {
-  res.static('index.html');
+app.route('/', (req, res) => {
+  res.static('index.html')
 })
 
 var port = process.env.PORT || 3000;
