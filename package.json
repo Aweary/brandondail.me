@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "babel-node server.js",
+    "start": "./node_modules/babel/bin/babel-node.js server.js",
     "build": "rm -r dist && cp -r tmp dist"
   },
   "author": "Brandon Dail <Kierkegaurd@gmail.com>",
@@ -40,6 +40,7 @@
     "watchify": "^3.3.0"
   },
   "dependencies": {
+    "babel": "^5.8.8",
     "express": "^4.13.1",
     "gist.scss": "0.0.1",
     "gsap": "^1.17.0",
