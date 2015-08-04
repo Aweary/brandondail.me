@@ -387,19 +387,36 @@ hr {
 
 .section--resume {
   background-color: #FAFAFA;
+  padding-bottom: 5em;
   color: #0A2933; }
 
-.skills--container {
+.skills--category {
   width: 100%;
-  margin: 0 auto;
-  text-align: left;
-  margin: 0 auto; }
+  padding: 0.5em;
+  font-size: 1em;
+  background-color: #EFEFEF;
+  color: #2176C7;
+  float: left;
+  text-align: center; }
 
-.skills {
-  display: inline-block;
+.skill {
+  padding: 0.25em;
+  background-color: #263238;
   text-align: center;
-  margin: 2em;
-  height: 200px; }
+  padding: 1em;
+  color: white;
+  font-size: 1em;
+  width: 25%;
+  margin: 0.25em;
+  margin-bottom: 0.5em;
+  float: left;
+  transition-duration: 0.75s; }
+  @media screen and (max-width: 760px) {
+    .skill {
+      width: 100%; } }
+  .skill:hover {
+    background-color: #FAFAFA;
+    color: #E91E63; }
 
 .section--projects {
   background-color: #CFD8DC; }
