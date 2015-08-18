@@ -399,25 +399,30 @@ hr {
   float: left;
   text-align: center; }
 
-.skill {
+/* .skill {
   padding: 0.25em;
-  background-color: #263238;
+  background-color: #FAFAFA;
   text-align: center;
   padding: 1em;
-  color: white;
+  color: $red;
   font-size: 1em;
   width: 25%;
   margin: 0.25em;
   margin-bottom: 0.5em;
   float: left;
-  transition-duration: 0.75s; }
-  @media screen and (max-width: 760px) {
-    .skill {
-      width: 100%; } }
-  .skill:hover {
-    background-color: #FAFAFA;
-    color: #E91E63; }
+  transition-duration: 0.75s;
 
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: #FAFAFA;
+    color: $pink;
+  }
+
+
+} */
 .section--projects {
   background-color: #CFD8DC; }
 
