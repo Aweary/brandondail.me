@@ -1,0 +1,434 @@
+/**
+ * All CSS styles for brandondail.me
+ * @author Brandon Dail
+ * @license MIT
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover,
+  a:active {
+    outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button, input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/**
+ * Site uses the Solarized color palette
+ * https://gist.github.com/planetoftheweb/6479462
+ */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1.5em; }
+
+.main-title, .title, .resume-title, .projects-title {
+  color: #F44336; }
+
+.bold {
+  color: #2176C7;
+  font-weight: bold; }
+
+.logo {
+  width: 35px; }
+
+.section, .section--splash, .section--resume, .section--projects {
+  height: auto;
+  min-height: 100vh;
+  padding: 1em;
+  position: relative; }
+
+.me {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 350px;
+  max-height: 40%;
+  margin: 0 auto; }
+  @media screen and (min-width: 760px) {
+    .me {
+      display: block; } }
+
+.img-container {
+  width: 100%;
+  height: 40%;
+  display: block;
+  background-color: blue; }
+
+.header {
+  position: relative; }
+
+.subtitle {
+  color: #673AB7; }
+
+body, html {
+  font-family: "Roboto Mono";
+  color: #0A2933; }
+
+a {
+  color: #2176C7;
+  text-decoration: underline;
+  transition-duration: 0.5s; }
+  a:hover {
+    transition-duration: 0.5s;
+    color: #F44336; }
+
+hr {
+  border: none;
+  background-color: #EAE3CB;
+  height: 0.35em;
+  clear: both; }
+
+.fa {
+  font-size: 0.9em !important;
+  color: #673AB7; }
+
+.resume--item-title {
+  color: #E91E63; }
+
+.nav {
+  font-size: 0.60em;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  margin: 0 auto; }
+  .nav li {
+    display: inline-block; }
+    .nav li a {
+      margin-right: 2em; }
+  @media screen and (min-width: 760px) {
+    .nav {
+      font-size: 0.8em;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0; } }
+
+.btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: #E91E63;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  margin: 10em auto;
+  border: none;
+  font-size: 0.9em;
+  transition-duration: 0.25s; }
+  .btn span {
+    padding-top: 1em;
+    display: block; }
+  .btn:hover {
+    transform: scale(1.1);
+    color: white; }
+
+.gist .gist-data {
+  padding: 3em !important; }
+
+.gist .gist-meta {
+  display: none !important; }
+
+.gist .gist-meta {
+  display: none !important; }
+
+.gist .line-numbers {
+  border: none !important; }
+
+.gist .blob-num {
+  border: none !important; }
+
+.gist .line-numbers {
+  color: white !important; }
+
+.gist .blob-num {
+  color: white !important; }
+
+.gist .line-numbers {
+  background-color: #0A2933 !important; }
+
+.gist .gist-data {
+  background-color: #263238 !important; }
+
+.gist .highlight {
+  background-color: #263238 !important; }
+
+.gist .line-data {
+  color: white !important; }
+
+.gist .gist-data {
+  color: white !important; }
+
+.gist .blob-code-inner {
+  color: white !important; }
+
+.gist .gist-file {
+  border: none !important; }
+
+.gist .main-content table td {
+  border: none !important; }
+
+.gist .pl-k {
+  color: #E91E63 !important; }
+
+.gist .pl-s {
+  color: #00BCD4 !important; }
+
+.gist .pl-s1 {
+  color: #2176C7 !important; }
+
+.gist .pl-s2 {
+  color: #F44336 !important; }
+
+.gist .pl-s3 {
+  color: #A57706 !important; }
+
+.gist .pl-st {
+  color: #EAE3CB !important; }
+
+.gist .pl-en {
+  color: #BD3613 !important; }
+
+.gist .pl-pds {
+  color: #0086b3 !important; }
+
+.gist .pl-smi {
+  color: #B39DDB !important; }
+
+.section--splash {
+  height: 100vh;
+  min-height: 770px;
+  background-color: #ECEFF1; }
+
+.section--resume {
+  background-color: #FAFAFA;
+  padding-bottom: 5em;
+  color: #0A2933; }
+
+.skills--category {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  background-color: #EFEFEF;
+  color: #2176C7;
+  float: left;
+  text-align: center; }
+
+/* .skill {
+  padding: 0.25em;
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 1em;
+  color: $red;
+  font-size: 1em;
+  width: 25%;
+  margin: 0.25em;
+  margin-bottom: 0.5em;
+  float: left;
+  transition-duration: 0.75s;
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: #FAFAFA;
+    color: $pink;
+  }
+
+
+} */
+.section--projects {
+  background-color: #CFD8DC; }
+
+.projects--container h2 {
+  color: #E91E63; }
+
+.projects--item {
+  width: 100%;
+  margin: 3em 0.25em; }

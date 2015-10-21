@@ -2,4 +2,3 @@ node_modules
 test
 npm-debug.log
 tmp
-dist
