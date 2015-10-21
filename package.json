@@ -44,6 +44,6 @@
     "express": "^4.13.1",
     "gist.scss": "0.0.1",
     "gsap": "^1.17.0",
-    "microbe.js": "0.1.5"
+    "microbe.js": "^0.1.14"
   }
 }

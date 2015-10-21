@@ -1,15 +1,15 @@
 
 import microbe from 'microbe.js'
-const app = microbe()
+const app = microbe(__dirname)
 
 app.set('publicFolder', 'dist');
 
-app.route('/', (req, res) => {
-  res.static('index.html')
+app.route({
+  method: 'GET',
+  path: '/',
+  handler: duplex => duplex.static('index.html')
 })
 
-var port = process.env.PORT || 3000;
-
-app.start(port, function() {
-  console.log('Started on port %j', port);
+app.start(3000, function() {
+  console.log('Started on port %j', 3000);
 })
